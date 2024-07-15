@@ -7,6 +7,9 @@
   "scripts": {
     "test": "jest"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "author": "Techo Startup Center",
   "license": "MIT",
   "private": true,
