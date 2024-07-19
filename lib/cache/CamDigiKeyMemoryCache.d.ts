@@ -1,4 +1,3 @@
-/// <reference types="node" />
 import CamDigiKeyCache from './CamDigiKeyCache';
 import crypto from 'crypto';
 export default class CamDigiKeyMemoryCache implements CamDigiKeyCache {

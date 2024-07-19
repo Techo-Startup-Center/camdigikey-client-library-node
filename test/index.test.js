@@ -21,7 +21,7 @@ test('Get Login Token Test', async () => {
 /* --- 2 --- */
 test('Get User Access Token Test', async () => {
   // Open login URL in web browser and scan QR code with CamDigiKey, then copy `authToken` to here
-  const authToken = 'eyJleHBpcnlEYXRlIjoxNjQ3ODI5NjM2MjM5LCJ0eXAiOiJKV1QiLCJhbGciOiJTSEE1MTJ3aXRoRUNEU0EifQ%3D%3D.5O6QKhXYp26G-qZpR33rRFLH4dOdlFFLOIvj8xm0lr1kUoiOnEU5r59RFs8W2UGd0YL7_HQ9fdhtZMMMmyCQSQ%3D%3D.MIGIAkIBCEWkV0h3sd-d4T81wDbcYSXccwdyFA6WPd_b9FxfigFhqva6bAQb20MkXT9511eZ8m1GJhTdMhHm0EE-sBVmyrwCQgETcHsJjD2xNBcJqX86MLq0vAbf9VzlJjtzZZVCYQp8_-xwlMWQTpwHoYJFFwOrPylfDoCARt-xXHgoIvFbJxPHzw%3D%3D';
+  const authToken = 'eyJleHBpcnlEYXRlIjoxNzIxMzU5OTIyMjMzLCJ0eXAiOiJKV1QiLCJhbGciOiJTSEE1MTJ3aXRoRUNEU0EifQ%3D%3D.WRv7oTSIIafe40y3eDoyLaZ3cuk7VGbV8k2m2_vos7dMeIDJEBSt2jDczFdIMxPuF2GrJsM3tzj-jup3buoAlw%3D%3D.MIGIAkIAy5jPAdw3REYiN0zJJTmJpQ5PbFHXHBSEgn7JoeTvdCpbxt_TcVdIty4O55xfn5USQO0g3enTxKPKurzf6Oesj9ECQgHw_BVZFTJnEEtbUNh7Kl9G69Zb02s92sAVwwVSH5MhTdok375Uii4MhOF6a5dUqasmrJ8QlksYzTRUi5So5gy4Rw%3D%3D';
   const res = await CamDigiKeyClient.getUserAccessToken(authToken)
   expect(res.error).toEqual(0);
   expect(res.data.accessToken).not.toBeNull();
