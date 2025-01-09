@@ -18,7 +18,7 @@ Setup Environment Variables
 # CamDigiKey Client Credential Configuration
 CAMDIGIKEY_CLIENT_ID="<client_id>"              # provided by us
 CAMDIGIKEY_HMAC_KEY="<hmac_key>"                # provided by us
-CAMDIGIKEY_AES_SECRET_KEY="<secret_key>"        # privided by us
+CAMDIGIKEY_AES_SECRET_KEY="<secret_key>"        # provided by us
 CAMDIGIKEY_AES_IV_PARAMS="<iv_param>"           # provided by us
 CAMDIGIKEY_CLIENT_DOMAIN="<application_domain>"
 CAMDIGIKEY_SERVER_BASED_URL="<camdigikey_url>"
@@ -59,7 +59,7 @@ console.log(res3);
 ```js
 validateJwt(jwt: string): Promise<Object>
 getOrganizationAccessToken(): Promise<Object>
-getLoginToken(): Promise<Object>
+getLoginToken(callbackVars?: Record<string, string>): Promise<Object>
 getUserAccessToken(authCode: string): Promise<Object>
 refreshUserAccessToken(accessToken: string): Promise<Object>
 logoutAccessToken(accessToken: string): Promise<Object>

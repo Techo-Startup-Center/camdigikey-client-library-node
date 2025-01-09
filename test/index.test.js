@@ -10,7 +10,7 @@ var accountToken;
 
 /* --- 1 --- */
 test('Get Login Token Test', async () => {
-  const res = await CamDigiKeyClient.getLoginToken();
+  const res = await CamDigiKeyClient.getLoginToken(); //{"key1": "value1", "key2": "value2"}
   expect(res.error).toEqual(0);
   expect(res.data.loginUrl).toContain('login?loginToken=');
   expect(res.data.loginToken).not.toBeNull();

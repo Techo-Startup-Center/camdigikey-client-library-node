@@ -1,7 +1,7 @@
 interface CamDigiKeyClientBase {
     validateJwt(jwt: string): Promise<Object>;
     getOrganizationAccessToken(): Promise<Object>;
-    getLoginToken(): Promise<Object>;
+    getLoginToken(callbackVars?: Record<string, string>): Promise<Object>;
     getUserAccessToken(authCode: string): Promise<Object>;
     refreshUserAccessToken(accessToken: string): Promise<Object>;
     logoutAccessToken(accessToken: string): Promise<Object>;
