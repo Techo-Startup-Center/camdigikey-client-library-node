@@ -1,4 +1,4 @@
 import BaseError from "./BaseError";
-export default class InvalidCertificateChainError extends BaseError {
+export declare class InvalidCertificateChainError extends BaseError {
     constructor(message: string);
 }

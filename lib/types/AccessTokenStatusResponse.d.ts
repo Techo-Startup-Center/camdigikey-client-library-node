@@ -1,0 +1,18 @@
+export type AccessTokenStatusResponse = {
+    status: boolean;
+    accessToken: string;
+    domain: string;
+    camdigikey_id: string;
+    last_name_en: string;
+    first_name_en: string;
+    last_name_kh: string;
+    first_name_kh: string;
+    gender: string;
+    mobile_phone: string;
+    email: string;
+    nationality: string;
+    personal_code: string;
+    iss: string;
+    type: string;
+    jti: string;
+};

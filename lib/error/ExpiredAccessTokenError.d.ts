@@ -1,4 +1,4 @@
 import BaseError from "./BaseError";
-export default class ExpiredAccessTokenError extends BaseError {
+export declare class ExpiredAccessTokenError extends BaseError {
     constructor(message: string);
 }

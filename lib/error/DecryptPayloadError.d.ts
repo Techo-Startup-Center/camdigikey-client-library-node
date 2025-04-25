@@ -1,4 +1,4 @@
 import BaseError from "./BaseError";
-export default class DecryptPayloadError extends BaseError {
+export declare class DecryptPayloadError extends BaseError {
     constructor(message: string);
 }

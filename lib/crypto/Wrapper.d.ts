@@ -1,14 +1,19 @@
-interface WrappedRequest {
+import { CamDigiKeyClientConfig } from "../types";
+type WrappedRequest = {
     clientId: string;
     params: string;
     signature: string;
-}
-interface WrappedResponse {
+};
+type WrappedResponse = {
     data: string;
     signature: string;
-}
+};
 export default class Wrapper {
-    static wrapRequest(request: Object): WrappedRequest;
-    static unwrapResponse(response: WrappedResponse): Object;
+    private readonly config;
+    private readonly aesHelper;
+    private readonly hmacHelper;
+    constructor(config: CamDigiKeyClientConfig);
+    wrapRequest(request: Object): WrappedRequest;
+    unwrapResponse(response: WrappedResponse): Object;
 }
 export {};

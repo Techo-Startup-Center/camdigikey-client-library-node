@@ -1,4 +1,4 @@
 import BaseError from "./BaseError";
-export default class InvalidTokenSignatureError extends BaseError {
+export declare class InvalidTokenSignatureError extends BaseError {
     constructor(message: string);
 }

@@ -1,4 +1,4 @@
 import BaseError from "./BaseError";
-export default class CamDigiKeyError extends BaseError {
+export declare class CamDigiKeyError extends BaseError {
     constructor(message: string, errorCode?: number);
 }

@@ -1,4 +1,7 @@
+import type { CamDigiKeyClientConfig } from '../types';
 export default class HmacHelper {
-    private static HMAC_ALGORITHM;
-    static calculateHmacSignature(data: Buffer): Buffer;
+    private static readonly HMAC_ALGORITHM;
+    private readonly config;
+    constructor(config: CamDigiKeyClientConfig);
+    calculateHmacSignature(data: Buffer): Buffer;
 }

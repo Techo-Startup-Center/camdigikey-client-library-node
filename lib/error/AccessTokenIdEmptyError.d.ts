@@ -1,4 +1,4 @@
 import BaseError from "./BaseError";
-export default class AccessTokenIdEmptyError extends BaseError {
+export declare class AccessTokenIdEmptyError extends BaseError {
     constructor(message: string);
 }

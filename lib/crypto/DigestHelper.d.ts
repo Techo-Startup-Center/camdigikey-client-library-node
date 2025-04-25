@@ -1,4 +1,4 @@
 export default class DigestHelper {
-    private static ALGORITHM;
+    private static readonly ALGORITHM;
     static digest(data: Buffer): Buffer;
 }
