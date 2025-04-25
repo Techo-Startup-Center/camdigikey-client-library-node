@@ -12,7 +12,11 @@ export type AccessTokenStatusResponse = {
     email: string;
     nationality: string;
     personal_code: string;
+    dob: string;
     iss: string;
     type: string;
+    nbf: Date;
+    exp: Date;
+    iat: Date;
     jti: string;
 };

@@ -31,7 +31,7 @@ CAMDIGIKEY_HMAC_KEY="<hmac_key>"                # provided by us
 CAMDIGIKEY_AES_SECRET_KEY="<secret_key>"        # provided by us
 CAMDIGIKEY_AES_IV_PARAMS="<iv_param>"           # provided by us
 CAMDIGIKEY_CLIENT_DOMAIN="<application_domain>"
-CAMDIGIKEY_SERVER_BASED_URL=https://service-account.camdigikey.gov.kh:8446
+CAMDIGIKEY_SERVER_BASED_URL=https://service-account.camdigikey.gov.kh:8446 # default value
 
 # CamDigiKey Client Connection KeyStore File Configuration
 CAMDIGIKEY_CLIENT_KEYSTORE_FILE="./path_to_keystore.p12"
