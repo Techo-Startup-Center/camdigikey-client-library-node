@@ -98,7 +98,7 @@ validateJwt(jwt: string): Promise<ValidateJwtResponse>;
 
 getOrganizationAccessToken(): Promise<ApiResponse<OrganizationAccessTokenResponse>>;
 
-getLoginToken(callbackVars?: Record<string, string>): Promise<ApiResponse<LoginTokenResponse>>;
+getLoginToken({callbackVars?: Record<string, string>, successReturnUrl?: string}): Promise<ApiResponse<LoginTokenResponse>>;
 
 getUserAccessToken(authCode: string): Promise<ApiResponse<AccessTokenResponse>>;
 

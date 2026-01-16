@@ -13,3 +13,4 @@ export * from './RefreshAccessTokenResponse';
 export * from './UserFaceResponse';
 export * from './UserProfileStatus';
 export * from './ValidateJwtResponse';
+export * from './GetLoginTokenOptions';

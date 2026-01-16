@@ -1,8 +1,8 @@
-import type { AccessTokenResponse, AccountTokenResponse, AccountTokenVerificationResponse, ApiResponse, CamDigiKeyClientConfig, CamDigiKeyTlsConfig, LoginTokenResponse, LogoutAccessTokenResponse, OrganizationAccessTokenResponse, RefreshAccessTokenResponse, UserFaceResponse, ValidateJwtResponse } from './types';
+import type { AccessTokenResponse, AccountTokenResponse, AccountTokenVerificationResponse, ApiResponse, CamDigiKeyClientConfig, CamDigiKeyTlsConfig, GetLoginTokenOptions, LoginTokenResponse, LogoutAccessTokenResponse, OrganizationAccessTokenResponse, RefreshAccessTokenResponse, UserFaceResponse, ValidateJwtResponse } from './types';
 interface CamDigiKeyClientBase {
     validateJwt(jwt: string): Promise<ValidateJwtResponse>;
     getOrganizationAccessToken(): Promise<ApiResponse<OrganizationAccessTokenResponse>>;
-    getLoginToken(callbackVars?: Record<string, string>): Promise<ApiResponse<LoginTokenResponse>>;
+    getLoginToken(options?: GetLoginTokenOptions): Promise<ApiResponse<LoginTokenResponse>>;
     getUserAccessToken(authCode: string): Promise<ApiResponse<AccessTokenResponse>>;
     refreshUserAccessToken(accessToken: string): Promise<ApiResponse<RefreshAccessTokenResponse>>;
     logoutAccessToken(accessToken: string): Promise<ApiResponse<LogoutAccessTokenResponse>>;
@@ -24,7 +24,7 @@ export declare class CamDigiKeyClient implements CamDigiKeyClientBase {
     private validateTokenSignature;
     validateJwt(jwt: string): Promise<ValidateJwtResponse>;
     getOrganizationAccessToken(): Promise<ApiResponse<OrganizationAccessTokenResponse>>;
-    getLoginToken(callbackVars?: Record<string, string>): Promise<ApiResponse<LoginTokenResponse>>;
+    getLoginToken(options?: GetLoginTokenOptions): Promise<ApiResponse<LoginTokenResponse>>;
     getUserAccessToken(authCode: string): Promise<ApiResponse<AccessTokenResponse>>;
     refreshUserAccessToken(accessToken: string): Promise<ApiResponse<RefreshAccessTokenResponse>>;
     logoutAccessToken(accessToken: string): Promise<ApiResponse<LogoutAccessTokenResponse>>;
