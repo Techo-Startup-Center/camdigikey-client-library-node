@@ -6,7 +6,7 @@ Add `camdigikey-client` to `package.json`
 
 ```json
 "dependencies": {
-  "camdigikey-client": "https://github.com/Techo-Startup-Center/camdigikey-client-library-node#v3.0.0"
+  "camdigikey-client": "https://github.com/Techo-Startup-Center/camdigikey-client-library-node#v3.0.1"
 }
 ```
 
